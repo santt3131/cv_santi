@@ -23,14 +23,12 @@ body {
 
 .photo,
 .additionals {
-	/*flex-grow, flex-shrink, flex-basis*/
-	/*flex: 2 0 40%;*/
 	width: 40%;
 }
 
+
 .title,
 .professional {
-	/*flex: 3 0 60%;*/
 	width: 60%;
 }
 
@@ -80,14 +78,33 @@ main {
 }
 
 .contact__item,
-.box__body {
+.box__body,
+.box__item {
 	font-weight: 300;
 }
 
-/********************Professional*********************/
+/*Cursos*/
+.box__item{
+	display: flex;
+}
+
+.box__item > span:first-child{
+	width: 70%;
+}
+
+.box__item > span:last-child{
+	width: 30%;
+	text-align: center;
+}
+
+/********************PROFESIONAL*********************/
 .professional {
 	color: #18171c;
 	background-color: #eeeeee;
+	padding: 0 1em;
+}
+
+.additionals {
 	padding: 0 1em;
 }
 
@@ -107,12 +124,27 @@ main {
 	font-size: 1em;
 }
 
+/*EDUCATION*/
+.box__title{
+	display: flex;
+}
+
+.box__title > span:first-child{
+	width: 70%;
+}
+
+.box__title > span:last-child{
+	width: 30%;
+	text-align: center;
+}
+
+/*JOB POSITIONS*/
 .tasklist__subtitle div:first-child {
-	flex: 0 1 70%;
+	width: 70%;
 }
 
 .tasklist__subtitle div:nth-child(2) {
-	flex: 0 1 30%;
+	width: 30%;
 }
 
 .taskbody {
@@ -150,11 +182,6 @@ a:hover {
     height: 20px;
 }
 
-.tasklist__proyect,
-.taskbody{
-    text-align: justify;
-}
-
 
 /*MOBILE*/
 @media (min-width: 320px) and (max-width: 767px) {
@@ -188,12 +215,12 @@ a:hover {
 
     .professional {
 		order: 1;
-		width: 90%;
+		width: 92%;
 	}
 
 	.additionals {
 		order: 2;
-		width: 90%;
+		width: 92%;
 	}
 
 	/*YEAR*/
