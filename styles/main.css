@@ -1,0 +1,198 @@
+body {
+	color: white;
+	background-color: #18171c;
+	margin: 1em 3em;
+	font-size: 18px;
+	font-family: "Open Sans", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Helvetica Neue", sans-serif;
+}
+
+/*********CABECERA*********/
+.photo{
+    text-align: center;
+}
+
+.photo__item {
+	clip-path: circle(40%);
+}
+
+.info-title {
+	display: flex;
+	margin: auto;
+}
+
+.photo,
+.additionals {
+	/*flex-grow, flex-shrink, flex-basis*/
+	/*flex: 2 0 40%;*/
+	width: 40%;
+}
+
+.title,
+.professional {
+	/*flex: 3 0 60%;*/
+	width: 60%;
+}
+
+.aboutme{
+    margin: 0 0 2em 0;
+    text-align: justify;
+}
+
+.title > *{
+    text-align: center;
+}
+
+.title__h1{
+    margin: 0px ;
+}
+
+/*********BODY*********/
+
+.title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title__item {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+main {
+	display: flex;
+}
+
+.logo {
+	list-style: none;
+	display: flex;
+}
+
+.logo__item {
+    width: 50%;
+    text-align: center;
+}
+
+.box__title {
+	font-weight: 800;
+}
+
+.contact__item,
+.box__body {
+	font-weight: 300;
+}
+
+/********************Professional*********************/
+.professional {
+	color: #18171c;
+	background-color: #eeeeee;
+	padding: 0 1em;
+}
+
+/*experience*/
+
+.tasklist__title {
+	font-weight: 800;
+	font-size: 1.5em;
+}
+
+.tasklist {
+	margin-top: 1em;
+}
+.tasklist__subtitle {
+	font-weight: 600;
+	display: flex;
+	font-size: 1em;
+}
+
+.tasklist__subtitle div:first-child {
+	flex: 0 1 70%;
+}
+
+.tasklist__subtitle div:nth-child(2) {
+	flex: 0 1 30%;
+}
+
+.taskbody {
+	list-style: none;
+	padding-left: 0;
+}
+
+.taskbody__item:before {
+	content: "✓ ";
+}
+
+.taskbody {
+	margin-left: 1em;
+}
+
+.footer a:link {
+    color: white;
+}
+
+.footer a:visited {
+    color: green;
+  }
+
+.footer a:hover {
+    color: lightblue;
+}
+
+.footer img{
+    width: 60px;
+    height: 20px;
+}
+
+
+
+/*MOBILE*/
+@media (min-width: 320px) and (max-width: 767px) {
+	body {
+		font-size: 15px;
+		margin: 1.2em 2em;
+	}
+
+	.photo,
+	.title,
+    .title,
+	.professional {
+		width: 100%;
+	}
+
+	/*HEADER*/
+	.info-title {
+		display: flex;
+		flex-direction: column;
+	}
+
+    .aboutme{
+        margin: 2em 0;
+    }
+
+	/*MAIN*/
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+
+    .professional {
+		order: 1;
+		width: 90%;
+	}
+
+	.additionals {
+		order: 2;
+		width: 90%;
+	}
+
+	/*YEAR*/
+	.tasklist__subtitle div:first-child {
+		flex: 0 1 55%;
+	}
+
+	.tasklist__subtitle div:nth-child(2) {
+		flex: 0 1 45%;
+	}
+}
