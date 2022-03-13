@@ -145,6 +145,10 @@ main {
     height: 20px;
 }
 
+.tasklist__proyect,
+.taskbody{
+    text-align: justify;
+}
 
 
 /*MOBILE*/
@@ -195,4 +199,8 @@ main {
 	.tasklist__subtitle div:nth-child(2) {
 		flex: 0 1 45%;
 	}
+
+    .tasklist__proyect{
+        margin-top: 0.5em;
+    }
 }
