@@ -128,15 +128,20 @@ main {
 	margin-left: 1em;
 }
 
-.footer a:link {
+/*footer,mail and mobile*/
+a{
+	text-decoration: none;
+}
+
+a:link {
     color: white;
 }
 
-.footer a:visited {
+a:visited {
     color: green;
   }
 
-.footer a:hover {
+a:hover {
     color: lightblue;
 }
 
