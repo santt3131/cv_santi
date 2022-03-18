@@ -197,6 +197,7 @@ main {
 	background-color: #0e76a8;
 	padding: 16px 22px;
 	position: fixed;
+	display: none;
 	bottom: 40px;
 	right: 40px;
 	transition: all 300ms ease 0ms;
@@ -206,6 +207,10 @@ main {
 .button-up:hover {
 	background-color: #0060d0;
 	transform: translateY(-6px);
+}
+
+#top {
+	display: none;
 }
 
 /*MOBILE*/
@@ -259,6 +264,10 @@ main {
 
 	.tasklist__proyect {
 		margin-top: 0.5em;
+	}
+
+	#top {
+		display: none;
 	}
 
 	.button-up {
