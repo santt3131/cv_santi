@@ -8,8 +8,8 @@ body {
 }
 
 /*********CABECERA*********/
-.photo{
-    text-align: center;
+.photo {
+	text-align: center;
 }
 
 .photo__item {
@@ -26,23 +26,22 @@ body {
 	width: 40%;
 }
 
-
 .title,
 .professional {
 	width: 60%;
 }
 
-.aboutme{
-    margin: 0 0 2em 0;
-    text-align: justify;
+.aboutme {
+	margin: 0 0 2em 0;
+	text-align: justify;
 }
 
-.title > *{
-    text-align: center;
+.title > * {
+	text-align: center;
 }
 
-.title__h1{
-    margin: 0px ;
+.title__h1 {
+	margin: 0px;
 }
 
 /*********BODY*********/
@@ -55,8 +54,8 @@ body {
 }
 
 .title__item {
-    text-align: center;
-    font-size: 1.2em;
+	text-align: center;
+	font-size: 1.2em;
 }
 
 main {
@@ -69,8 +68,8 @@ main {
 }
 
 .logo__item {
-    width: 50%;
-    text-align: center;
+	width: 50%;
+	text-align: center;
 }
 
 .box__title {
@@ -84,15 +83,15 @@ main {
 }
 
 /*Cursos*/
-.box__item{
+.box__item {
 	display: flex;
 }
 
-.box__item > span:first-child{
+.box__item > span:first-child {
 	width: 70%;
 }
 
-.box__item > span:last-child{
+.box__item > span:last-child {
 	width: 30%;
 	text-align: center;
 }
@@ -125,15 +124,15 @@ main {
 }
 
 /*EDUCATION*/
-.box__title{
+.box__title {
 	display: flex;
 }
 
-.box__title > span:first-child{
+.box__title > span:first-child {
 	width: 70%;
 }
 
-.box__title > span:last-child{
+.box__title > span:last-child {
 	width: 30%;
 	text-align: center;
 }
@@ -161,27 +160,53 @@ main {
 }
 
 /*footer,mail and mobile*/
-a{
+.title a,
+.footer a {
 	text-decoration: none;
 }
 
-a:link {
-    color: white;
+.title a:link,
+.footer a:link {
+	color: white;
 }
 
-a:visited {
-    color: green;
-  }
-
-a:hover {
-    color: lightblue;
+.title a:visited,
+.footer a:visited {
+	color: green;
 }
 
-.footer img{
-    width: 60px;
-    height: 20px;
+.title a:hover,
+.footer a:visited {
+	color: lightblue;
 }
 
+.footer img {
+	width: 60px;
+	height: 20px;
+}
+
+/*arrow*/
+.button-up {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	background-color: #0e76a8;
+	padding: 16px 22px;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	z-index: 2;
+}
+
+.button-up:hover {
+	background-color: #0060d0;
+	transform: translateY(-6px);
+}
 
 /*MOBILE*/
 @media (min-width: 320px) and (max-width: 767px) {
@@ -192,7 +217,7 @@ a:hover {
 
 	.photo,
 	.title,
-    .title,
+	.title,
 	.professional {
 		width: 100%;
 	}
@@ -203,9 +228,9 @@ a:hover {
 		flex-direction: column;
 	}
 
-    .aboutme{
-        margin: 2em 0;
-    }
+	.aboutme {
+		margin: 2em 0;
+	}
 
 	/*MAIN*/
 	main {
@@ -213,7 +238,7 @@ a:hover {
 		flex-direction: column;
 	}
 
-    .professional {
+	.professional {
 		order: 1;
 		width: 92%;
 	}
@@ -232,7 +257,14 @@ a:hover {
 		flex: 0 1 45%;
 	}
 
-    .tasklist__proyect{
-        margin-top: 0.5em;
-    }
+	.tasklist__proyect {
+		margin-top: 0.5em;
+	}
+
+	.button-up {
+		font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+	}
 }
